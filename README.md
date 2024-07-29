@@ -85,17 +85,14 @@ This project includes scripts for generating, parsing, and anonymizing data. It 
     ```sh
     docker run -d --name data_mask_sample_container data_mask_sample
     ```
-    
+
 3.1 **Run scripts manually with tests**
 
-    ```sh
-    docker run -d --name data_mask_sample_container data_mask_sample
-    ```
+    python3 -m unittest discover -s .
+
 3.2 **Run scripts manually with main script**
 
-    ```sh
-    docker run -d --name data_mask_sample_container data_mask_sample
-    ```
+    python3 main.py
 
 4. **Enter the running container**
 
