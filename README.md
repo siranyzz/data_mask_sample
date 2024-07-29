@@ -126,8 +126,12 @@ This project includes scripts for generating, parsing, and anonymizing data. It 
     docker rm data_mask_sample_container
     ```
 
+
 9. **Remove the Docker image (if needed)**
 
     ```sh
     docker rmi data_mask_sample
     ```
+## Others
+    You can switch the anonymized algorithms in main.py by changing the dictionary of columns_to_anonymize.
+    For example, you can change the algorithms from mask to hash from a specific column or columns. 
