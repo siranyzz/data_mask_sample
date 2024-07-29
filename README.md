@@ -5,7 +5,7 @@ This project includes scripts for generating, parsing, and anonymizing data. It 
 ## Project Structure
 
 ```tree
-/data_mask
+/data_mask_sample
 │
 ├── generate_data.py # Script to generate CSV data
 ├── anonymize.py # Script to anonymize CSV data
