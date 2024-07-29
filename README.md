@@ -87,11 +87,13 @@ This project includes scripts for generating, parsing, and anonymizing data. It 
     ```
     
 3.1 **Run scripts manually with test**
+
     ```sh
     python3 -m unittest discover -s .
     ```
     
 3.2 **Run scripts manually with main script**
+
     ```sh
     python3 python3 main.py
     ```
