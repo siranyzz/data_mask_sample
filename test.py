@@ -1,6 +1,6 @@
 import unittest
 import pandas as pd
-from data_mask.generate_data import generate_csv
+from generate_data import generate_csv
 from data_mask.anonymize import hash_value, mask, anonymize_columns
 from data_mask.parse import parse_df
 from data_mask.schema import person_template, salt
