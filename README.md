@@ -85,14 +85,22 @@ This project includes scripts for generating, parsing, and anonymizing data. It 
     ```sh
     docker run -d --name data_mask_sample_container data_mask_sample
     ```
+3.1 **Run scripts manually with test**
+    ```sh
+    python3 -m unittest discover -s .
+    ```
+3.2 **Run scripts manually with main script**
+    ```sh
+    python3 python3 main.py
+    ```
 
-3. **Enter the running container**
+4. **Enter the running container**
 
     ```sh
     docker exec -it data_mask_sample_container sh
     ```
 
-4. **Check the generated files**
+5. **Check the generated files**
 
     ```sh
     ls /app
@@ -100,25 +108,25 @@ This project includes scripts for generating, parsing, and anonymizing data. It 
     cat /app/anonymized_data.csv 
     ```
 
-5. **Exit the container**
+6. **Exit the container**
 
     ```sh
     exit
     ```
 
-5. **Stop the container**
+7. **Stop the container**
 
     ```sh
     docker stop data_mask_sample_container
     ```
 
-6. **Remove the container**
+8. **Remove the container**
 
     ```sh
     docker rm data_mask_sample_container
     ```
 
-7. **Remove the Docker image (if needed)**
+9. **Remove the Docker image (if needed)**
 
     ```sh
     docker rmi data_mask_sample
