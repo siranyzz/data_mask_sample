@@ -1,9 +1,9 @@
 import unittest
 import pandas as pd
 from generate_data import generate_csv
-from data_mask.anonymize import hash_value, mask, anonymize_columns
-from data_mask.parse import parse_df
-from data_mask.schema import person_template, salt
+from anonymize import hash_value, mask, anonymize_columns
+from parse import parse_df
+from schema import person_template, salt
 import os
 
 class TestDataProcessing(unittest.TestCase):
