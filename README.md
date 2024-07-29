@@ -71,7 +71,7 @@ This project includes scripts for generating, parsing, and anonymizing data. It 
 
 ### Docker Setup
 1. **Start Docker**
-        ```sh
+   ```sh
     docker run -d -p 80:80 docker/getting-started
     ```
 2. **Build the Docker image**
