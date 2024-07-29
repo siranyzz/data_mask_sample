@@ -70,23 +70,26 @@ This project includes scripts for generating, parsing, and anonymizing data. It 
     ```
 
 ### Docker Setup
-
-1. **Build the Docker image**
+1. **Start Docker**
+        ```sh
+    docker run -d -p 80:80 docker/getting-started
+    ```
+2. **Build the Docker image**
 
     ```sh
-    docker build -t data_mask .
+    docker build -t data_mask_sample .
     ```
 
-2. **Run the Docker container, it will automatically run the test.py and the main.py**
+3. **Run the Docker container, it will automatically run the test.py and the main.py**
 
     ```sh
-    docker run -d --name data_mask_container data_mask
+    docker run -d --name data_mask_sample_container data_mask_sample
     ```
 
 3. **Enter the running container**
 
     ```sh
-    docker exec -it data_mask_container sh
+    docker exec -it data_mask_sample_container sh
     ```
 
 4. **Check the generated files**
@@ -106,17 +109,17 @@ This project includes scripts for generating, parsing, and anonymizing data. It 
 5. **Stop the container**
 
     ```sh
-    docker stop data_mask_container
+    docker stop data_mask_sample_container
     ```
 
 6. **Remove the container**
 
     ```sh
-    docker rm data_mask_container
+    docker rm data_mask_sample_container
     ```
 
 7. **Remove the Docker image (if needed)**
 
     ```sh
-    docker rmi data_mask
+    docker rmi data_mask_sample
     ```
